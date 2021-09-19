@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./fav/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./fav/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./fav/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./fav/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./fav/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./fav/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./fav/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./fav/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./fav/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./fav/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./fav/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./fav/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="field hidden" id="field"></div>
+      <div class="setting show">
+        <form action="#" class="form">
+          <div class="title">Х Крестики - нолики О</div>
+          <input
+            name="fieldS"
+            class="fieldS"
+            type="number"
+            min="3"
+            placeholder="Размер поля"
+            required
+          />
+          <input
+            name="cell"
+            class="cellS"
+            type="number"
+            min="80"
+            placeholder="Размер ячеек"
+            required
+          />
+          <div class="box">
+            <input type="checkbox" id="first" name="first" class="first" />
+            <label for="first" class="label">Я хожу первым</label>
+          </div>
+          <div class="level">
+            <input type="radio" id="easy" name="level" value="easy" />
+            <label for="easy">Легкий уровень</label>
+            <input type="radio" id="dif" name="level" value="dif" />
+            <label for="dif">Сложный уровень</label>
+          </div>
+          <button class="startBtn">Начать</button>
+          <div class="hidden error error__size">
+            Всё ли ты верно указал &#128580; ? <br />
+            <span
+              >Размер поля должен быть больше 2, но меньше 20<br />
+              Размер ячейки - больше 15</span
+            >
+          </div>
+          <div class="hidden error error__level">Выберите уровень игры</div>
+        </form>
+      </div>
+      <div class="win win__player hidden">
+        Ни секунды в тебе не сомневался!!!
+        <img src="./win.png" alt="win" />
+      </div>
+      <div class="win win__computer hidden">
+        Ой, ну бывает <br />
+        Попробуй еще раз
+        <img src="./loss.jpg" alt="loss" />
+      </div>
+      <div class="win win__friendship hidden">
+        Победила дружба
+        <img src="./fr.jpg" alt="friend" />
+      </div>
+
+      <div class="overlay hidden">
+        <button class="restart">
+          <img src="./restart.svg" alt="restart" />
+        </button>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
